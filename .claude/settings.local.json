@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \":*)",
+      "Bash(echo $PATH)",
+      "Bash(for OFFSET in 0 900 1700 2500 3300 4100 4900)",
+      "Bash(do)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless=new --no-sandbox --disable-gpu --run-all-compositor-stages-before-draw --virtual-time-budget=3000 --screenshot=\"/Users/romaburekhin/Documents/personal/claude/project2/section_$OFFSET.png\" --window-size=1440,900 --hide-scrollbars \"file:///Users/romaburekhin/Documents/personal/claude/project2/index.html#scroll$OFFSET\")",
+      "Bash(done)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless=new --no-sandbox --disable-gpu --run-all-compositor-stages-before-draw --virtual-time-budget=5000 --screenshot=\"/Users/romaburekhin/Documents/personal/claude/project2/screenshot_v4.png\" --window-size=1440,900 --hide-scrollbars \"file:///Users/romaburekhin/Documents/personal/claude/project2/index.html\")"
+    ]
+  }
+}
